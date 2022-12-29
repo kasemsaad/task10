@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/all.min.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>task9</title>
+</head>
+<body>
+<header>
+    <div class="container  pt-5 ">
+        <div class="textbox  py-5 ">
+            <div id="error"></div>
+            <h1><span> CRUDS</span>  Operating System</h1>
+            <hr>
+        </div>
+        <div class="textbox1">
+           <h6> PRODUCT NAME</h6>
+            <input id="PRODUCTNAME"   class=" form-control  mb-3 " type="text">
+        </div>
+        <div class="textbox1">
+            <h6>PRODUCT PRICE</h6>
+             <input id="PRODUCTPRICE"   class=" form-control  mb-3 " type="text">
+         </div>
+         <div class="textbox1">
+            <h6>PRODUCT CATEGORY</h6>
+             <input id="PRODUCTCATEGORY"   class=" form-control  mb-3 " type="text">
+         </div>
+         <div class="textbox1">
+            <h6>PRODUCT DESCRIPTION</h6>
+             <input id="PRODUCTDESCRIPTION"   class=" form-control  mb-3 " type="text">
+         </div>
+         <button onclick="add()" class="btn bg-success  fw-bold" id="addBtn">Add Product</button>
+        </div>
+         <div class="container text-center pt-5 ">
+            <h6 id="embty"></h6>
+         <input oninput="search(this.value)" type="text" id="search" class=" form-control "  placeholder="Search...">
+         <div class="w-100 mx-auto py-5 ">
+            <table class=" table text-center">
+                <thead>
+                    <tr>
+                    <th>Name</th>
+                    <th>price</th>
+                    <th>category</th>
+                    <th>Desc</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </tr></thead>
+                <tbody id="show">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</header>
+<footer class="bg-dark w-100 d-flex justify-content-center ">
+    <div class="copy  text-center py-4">
+        <h5>Copyright © Kasem Saad</h5>
+        <i class="fs-5 fab fa-linkedin-in my-2"></i>
+    </div>
+</footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

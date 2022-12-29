@@ -1,0 +1,28 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+h1{
+  color: gray;
+}
+span{
+  color: rgb(202, 13, 13);
+
+}
+.textbox1{
+  height: 6rem;
+}
+.form-control {
+  margin:-8px 0;
+}
+.copy{
+  color: white;
+}
+h6{
+  color: red;
+}
+#input1,#input2,#input3,#input4 {
+  width: 8rem;
+}
